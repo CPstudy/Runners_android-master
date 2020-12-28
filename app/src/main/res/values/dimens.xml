@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="status">25dp</dimen>
+    <dimen name="marginTiny">4dp</dimen>
+    <dimen name="marginSmall">8dp</dimen>
+    <dimen name="marginDefault">16dp</dimen>
+    <dimen name="marginLarge">32dp</dimen>
+    <dimen name="sizeProfileImage">96dp</dimen>
+
+    <dimen name="edittext_icon">20dp</dimen>
+    <dimen name="txtSizeDefault">18sp</dimen>
+    <dimen name="txtSizeMedium">24sp</dimen>
+    <dimen name="txtSizeLarge">30sp</dimen>
+
+    <dimen name="sizeProfile">210dp</dimen>
+    <dimen name="sizeFootprint">65dp</dimen>
+
+</resources>

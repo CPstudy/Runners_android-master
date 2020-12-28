@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/high_bg"
+    android:orientation="vertical"
+    tools:context=".RoomlistActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginSmall"
+        android:layout_marginBottom="@dimen/marginSmall">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/high_tag"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/marginSmall"
+            android:layout_marginBottom="@dimen/marginSmall"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="주간 멀티 플레이"
+            android:textColor="@color/colorTextGray"
+            android:textSize="@dimen/txtSizeDefault"
+            android:textStyle="bold"/>
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@null"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/high_btn_white"
+        android:text="방 만들기"/>
+
+</LinearLayout>

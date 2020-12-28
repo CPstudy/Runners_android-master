@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/marginSmall"
+        android:background="@drawable/high_list">
+
+        <LinearLayout
+            android:id="@+id/layoutText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/marginTiny"
+            android:background="#79000000"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtEntry1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="참여자1: "
+                android:textColor="@color/colorTextOrange"/>
+
+            <TextView
+                android:id="@+id/txtEntry2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="참여자2: "
+                android:textColor="@color/colorTextOrange"/>
+
+            <TextView
+                android:id="@+id/txtScore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:text="점수: "
+                android:textColor="@color/colorTextOrange"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layoutText"
+            android:layout_margin="@dimen/marginSmall"
+            android:text="게임 중"
+            android:textColor="#79ffffff"
+            android:textSize="@dimen/txtSizeLarge"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

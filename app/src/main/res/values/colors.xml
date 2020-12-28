@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorFrame">#a56acb</color>
+    <color name="colorBackground">#8f57b3</color>
+    <color name="colorPrimary">#723695</color>
+    <color name="colorPrimaryDark">#602f7f</color>
+    <color name="colorAccent">#f50087</color>
+    <color name="ripple">#30000000</color>
+
+    <color name="colorText">#ffffff</color>
+    <color name="colorTextOrange">#ffa600</color>
+    <color name="colorTextGray">#555555</color>
+    <color name="colorTextDarkBrown">#94622c</color>
+    <color name="colorTextTransparent">#b5ffffff</color>
+    <color name="colorStrokePurple">#613e77</color>
+    <color name="colorStrokeBlue">#28477a</color>
+    <color name="colorStrokeOrange">#805027</color>
+    <color name="textTransparent">#8fffffff</color>
+    <color name="axisLine">#ffffff</color>
+</resources>

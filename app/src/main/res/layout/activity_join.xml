@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gbg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.guk2zzada.runnerswar.JoinActivity">
+
+    <ScrollView
+        android:id="@+id/cardJoin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginDefault"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gbg_frame_idcard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rect_gray"
+                    android:gravity="center"
+                    android:padding="@dimen/marginSmall"
+                    android:text="JOIN"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/txtSizeMedium"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginSmall">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="아이디"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/txtSizeDefault" />
+
+                    <EditText
+                        android:id="@+id/edtID"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:gravity="center_horizontal"
+                        android:lines="1"
+                        android:theme="@style/ControlColorGray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginSmall">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="암호"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/txtSizeDefault" />
+
+                    <EditText
+                        android:id="@+id/edtPW1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:gravity="center_horizontal"
+                        android:lines="1"
+                        android:theme="@style/ControlColorGray"
+                        android:inputType="textPassword"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginSmall">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="암호 확인"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/txtSizeDefault" />
+
+                    <EditText
+                        android:id="@+id/edtPW2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:gravity="center_horizontal"
+                        android:lines="1"
+                        android:theme="@style/ControlColorGray"
+                        android:inputType="textPassword" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginSmall">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="성별"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/txtSizeDefault" />
+
+                    <RadioGroup
+                        android:id="@+id/rdoGrp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdoMale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:checked="true"
+                            android:text="남자"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/txtSizeDefault"
+                            android:theme="@style/ControlColorGray" />
+
+                        <RadioButton
+                            android:id="@+id/rdoFemale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="여자"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/txtSizeDefault"
+                            android:theme="@style/ControlColorGray" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginSmall">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="생년월일"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/txtSizeDefault" />
+
+                    <EditText
+                        android:id="@+id/edtBirth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:gravity="center_horizontal"
+                        android:lines="1"
+                        android:inputType="numberSigned"
+                        android:hint="1990.01.01"
+                        android:theme="@style/ControlColorGray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginSmall">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="키"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/txtSizeDefault" />
+
+                    <EditText
+                        android:id="@+id/edtHeight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center_horizontal"
+                        android:lines="1"
+                        android:inputType="numberDecimal"
+                        android:theme="@style/ControlColorGray" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="cm"
+                        android:textSize="@dimen/txtSizeDefault"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginSmall">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="몸무게"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/txtSizeDefault" />
+
+                    <EditText
+                        android:id="@+id/edtWeight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center_horizontal"
+                        android:lines="1"
+                        android:inputType="numberDecimal"
+                        android:theme="@style/ControlColorGray" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="kg"
+                        android:textSize="@dimen/txtSizeDefault"/>
+
+                </LinearLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/marginDefault"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_logo"
+                        android:tint="@color/colorTextGray" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginDefault"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/gbtn_submit" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/marginDefault"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

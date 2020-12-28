@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue"
+    tools:context="com.guk2zzada.runnerswar.PlayMultiActivity">
+
+    <Button
+        android:id="@+id/btnShowLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="START" />
+
+    <TextView
+        android:id="@+id/txtDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnShowLocation"
+        android:text="거리 = "
+        android:textColor="#fff"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtDistance"
+        android:editable="false"
+        android:text="log print here\n"
+        android:textSize="15dp"
+        android:textColor="#fff"/>
+
+    <!--<LinearLayout
+        android:id="@+id/layProfile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginBottom="@dimen/marginSmall"
+            android:src="@drawable/img_rat"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용자1"
+            android:textColor="@color/colorText"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="8dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layProfile1"
+        android:layout_above="@+id/layProfile2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/marginSmall"
+        android:background="@drawable/bg_line"
+        android:id="@+id/view" />
+
+    <LinearLayout
+        android:id="@+id/layProfile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/layInfo"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginBottom="@dimen/marginSmall"
+            android:src="@drawable/img_cat"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="본인"
+            android:textColor="@color/colorText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layInfo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/txtSizeDefault">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남은 거리"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/txtSizeDefault"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.6km"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/txtSizeLarge"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상대와의 거리"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/txtSizeDefault"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200m"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/txtSizeLarge"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/view"
+        android:src="@drawable/ic_footprint"
+        android:tint="#FFFFFF"/>-->
+
+</RelativeLayout>

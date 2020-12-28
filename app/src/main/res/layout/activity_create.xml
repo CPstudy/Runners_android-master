@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gbg"
+    tools:context="com.guk2zzada.runnerswar.CreateActivity">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/idCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:flipOnTouch="true"
+        app:flipEnabled="true"
+        app:flipDuration="250"
+        app:flipType="horizontal" >
+
+        <include
+            android:id="@+id/cardBack"
+            layout="@layout/layout_idcard_back"/>
+
+        <include
+            android:id="@+id/cardFront"
+            layout="@layout/layout_idcard_front"/>
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+</RelativeLayout>
